@@ -338,6 +338,7 @@ $(function() {
 			if (($(this).css("position") == "absolute" || $(this).css("position") == "relative") && ($(this).css("left") != "auto" || $(this).css("top") != "auto")) {
 			    //console.log($(this).attr('id')+'- left:'+$(this).css("left")+' top:'+$(this).css("top"));
 			    var targetId = '#'+$(this).attr('id')+'{';
+			    alert(targetId);
 
 			    //Run edit function to replace the css attribute
 			    //Sample: replaceAttrVal(thecss, targetId, changeAttr, newAttrVal);
