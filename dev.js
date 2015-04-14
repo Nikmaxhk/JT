@@ -337,7 +337,7 @@ $(function() {
 		$.each( $('.ui-draggable'), function() {
 			if (($(this).css("position") == "absolute" || $(this).css("position") == "relative") && ($(this).css("left") != "auto" || $(this).css("top") != "auto")) {
 			    //console.log($(this).attr('id')+'- left:'+$(this).css("left")+' top:'+$(this).css("top"));
-			    if($(this).attr('id')=='p' || typeof($(this).attr('id') === 'undefined')){alert('drag id should not be '+$(this).attr('id'));}
+			    if($(this).attr('id')=='p' || typeof($(this).attr('id')) === 'undefined'){alert('drag id should not be '+$(this).attr('id'));}
 			    var targetId = '#'+$(this).attr('id')+'{';
 
 			    //Run edit function to replace the css attribute
