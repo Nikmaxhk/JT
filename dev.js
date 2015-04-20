@@ -1,4 +1,5 @@
-/*jslint browser: true*/
+
+'/*jslint browser: true*/
 /*jslint jquery: true*/
 
 /*
@@ -302,7 +303,8 @@ $(function() {
 	////////Add HTML////////////////////////////////
 	$("html").append('<textarea name="" id="nx_import" class="nx_style1"></textarea><textarea name="" id="nx_export" class="nx_style1" ></textarea><input type="submit" id="nx_submit" value="Submit"><div id="nx_option1"><input type="checkbox" value="1" id="nx_checkbox_wnh">More attributes</div>');
 
-	$('#nx_import').val('#b1{position: absolute; left: 0px; top:0; width: 300px;} \n#b2{position: absolute; left: 500px; top:0; width: 300px;} \n#b3{position: absolute; left: 200px; top:0; width: 300px;}');
+	//$('#nx_import').val('#b1{position: absolute; left: 0px; top:0; width: 300px;} \n#b2{position: absolute; left: 500px; top:0; width: 300px;} \n#b3{position: absolute; left: 200px; top:0; width: 300px;}');
+	//$('#nx_import').val();
 	$('body').prepend('<img src="imgs/p.jpg" alt="" id="p">');
 	
 
@@ -312,11 +314,11 @@ $(function() {
 
 	$("#nx_import").css({"position": "fixed", "display": "none",
 	 "right": "0", "top": "100px", 
-	 "width": "500px", "height": "120px", "border": "0", "padding": "10px"});
+	 "width": "500px", "height": "120px", "border": "0", "padding": "10px", "font-size": "14px", "line-height": "16px"});
 
 	$("#nx_export").css({"position": "fixed",  "display": "none",
 	 "right": "0", "top": "248px", 
-	 "width": "501px", "height": "120px", "color": "#ffffff", "background-color": "#000000", "padding": "10px", "border": "0", "height": "120px",});
+	 "width": "501px", "height": "120px", "color": "#ffffff", "background-color": "#000000", "padding": "10px", "border": "0", "height": "120px", "font-size": "14px", "line-height": "16px"});
 
 	$("#nx_submit").css({"position": "fixed",  "display": "none",
 	 "right": "301px", "top": "216px", "color": "#ffffff", "background-color": "#808080", "padding": "5px 13px" , "border": "0px", "cursor": "pointer"});
@@ -362,6 +364,19 @@ $(function() {
 
 
 	}); //End onClick
+
+	//Disable Right click
+	$(document).bind("#nx_import",function(e){
+        e.preventDefault();
+	});
+	$(document).bind("#nx_export",function(e){
+	        e.preventDefault();
+	});
+
+
+
+
+	
 }); //End Ready
 
 
@@ -373,6 +388,3 @@ $(function() {
 ///`2b - Refresh or Leave page Remind
 ///`3 Short form of Ready Function
 ///`4 on click
-
-
-
