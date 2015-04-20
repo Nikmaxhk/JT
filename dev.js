@@ -366,17 +366,14 @@ $(function() {
 	}); //End onClick
 
 	//Disable Right click
-	$(document).bind("#nx_import",function(e){
-        e.preventDefault();
-	});
-	$(document).bind("#nx_export",function(e){
-	        e.preventDefault();
-	});
+	$("#nx_import").on("contextmenu",function(e){
+	 return false;
+	}); 
+	$("#nx_export").on("contextmenu",function(e){
+	  return false;
+	}); 
 
 
-
-
-	
 }); //End Ready
 
 
