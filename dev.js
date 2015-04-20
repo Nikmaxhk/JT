@@ -1,5 +1,5 @@
 
-'/*jslint browser: true*/
+/*jslint browser: true*/
 /*jslint jquery: true*/
 
 /*
