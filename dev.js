@@ -365,13 +365,6 @@ $(function() {
 
 	}); //End onClick
 
-	//Disable Right click
-	$("#nx_import").on("contextmenu",function(e){
-	 return false;
-	}); 
-	$("#nx_export").on("contextmenu",function(e){
-	  return false;
-	}); 
 
 
 }); //End Ready
